@@ -1,0 +1,21 @@
+.action-buttons__item {
+  &:not(:last-child) {
+    margin: 0 0 5px;
+  }
+}
+
+.action-buttons__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  background-color: $color-simple-white;
+  border-radius: 50%;
+  cursor: pointer;
+  @include smooth-transition;
+
+  &:hover {
+    box-shadow: inset 0 0 5px $color-aluminium-gray;
+  }
+}

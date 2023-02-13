@@ -1,0 +1,38 @@
+.image-list {
+  display: flex;
+  min-width: 0;
+}
+
+.image-list__item {
+  height: 332px;
+  background-color: $color-solitude-gray;
+
+  @media (max-width: $vp-mobile) {
+    height: 259px;
+
+    img {
+      width: 258px;
+      height: 258px;
+    }
+  }
+}
+
+.image-list__item:has(.image-list__item-plug) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .image-list__item-plug {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-simple-black;
+    opacity: 0.2;
+  }
+
+  @media (max-width: $vp-mobile) {
+    .image-list__item-plug {
+      font-size: 0.9rem;
+    }
+  }
+}

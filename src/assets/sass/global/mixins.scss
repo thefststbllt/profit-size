@@ -1,0 +1,8 @@
+@mixin smooth-transition {
+  transition: 0.3s all ease-out;
+
+  &:hover,
+  &:focus-visible {
+    transition: 0.3s all ease-out;
+  }
+}

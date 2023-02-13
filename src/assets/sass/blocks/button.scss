@@ -1,0 +1,21 @@
+.button {
+  font-size: 0.875rem;
+  line-height: 1.21em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-golden-sand;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  @include smooth-transition;
+
+  &:hover {
+    box-shadow: 0 0 5px $color-aluminium-gray;
+  }
+
+  svg {
+    margin: 0 12px 0 0;
+  }
+}

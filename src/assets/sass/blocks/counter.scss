@@ -1,0 +1,67 @@
+.counter {
+  display: flex;
+  background-color: $color-simple-white;
+  border: 1px solid $color-solitude-gray;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  @include smooth-transition;
+
+  &:hover {
+    border-color: $color-simple-black;
+  }
+}
+
+.counter__button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  background-color: $color-simple-white;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: $color-aluminium-gray;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 6px);
+    @include smooth-transition;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      background-color: $color-simple-black;
+    }
+  }
+}
+
+.counter__button--plus {
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.counter__button--minus {
+  left: 4px;
+}
+
+.counter__button--plus {
+  right: 4px;
+}
+
+.counter input {
+  font-size: 1.125rem;
+  line-height: 1.16em;
+  width: 100%;
+  text-align: center;
+  border: none;
+  padding: 0;
+  height: 48px;
+}

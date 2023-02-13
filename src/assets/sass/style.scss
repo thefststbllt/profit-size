@@ -1,0 +1,21 @@
+//Global
+@import '../../libs/normalize';
+@import 'global/variables';
+@import 'global/reboot';
+@import 'global/mixins';
+@import 'global/fonts';
+//Swiper
+@import 'vendor/swiper';
+
+//Blocks
+@import 'blocks/page';
+@import 'blocks/tab-buttons';
+@import 'blocks/tabs';
+@import 'blocks/cards';
+@import 'blocks/card';
+@import 'blocks/image-list';
+@import 'blocks/action-buttons';
+
+//UI
+@import 'blocks/counter';
+@import 'blocks/button';

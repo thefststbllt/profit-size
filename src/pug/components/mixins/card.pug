@@ -1,0 +1,18 @@
+mixin card(image, itemTitle, price, oldPrice, label)
+    .card
+        ul
+            li
+                img(src= require(pic))
+            li
+                img(src= require(pic))
+            li
+                img(src= require(pic))
+            li
+                img(src= require(pic))
+        h3= itemTitle
+        span(data-old-price=oldPrice)= price
+        .counter
+            button(type="button")
+            input(value="1", placeholder="1")
+            button(type="button")
+        span.status= label

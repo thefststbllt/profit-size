@@ -1,0 +1,677 @@
+extends ./components/base/layout.pug
+
+block variables
+    -
+        const products1 = [
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            },
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            }
+        ]
+        const products2 = [
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            },
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            },
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            }
+        ]
+        const products3 = [
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-smart-watch.webp",
+                            "/src/assets/img/content/retina/content-smart-watch@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Умные часы SMARTWATCH XM 109 черный',
+                price: '12 999 ₽',
+                oldPrice: null,
+                label: 'хит'
+            },
+            {
+                images: null,
+                title: 'Тарелка керамическая ручной работы ⌀\u00A012',
+                price: '600 ₽',
+                oldPrice: '810 ₽',
+                label: null
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-ring.webp",
+                            "/src/assets/img/content/retina/content-ring@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Золотое кольцо МАЛИКА с аметистом и фианитами',
+                price: '15 700 ₽',
+                oldPrice: null,
+                label: 'new'
+            },
+            {
+                images: [
+                    {
+                        1: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        2: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        3: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        4: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ],
+                        5: [
+                            "/src/assets/img/content/content-pot.webp",
+                            "/src/assets/img/content/retina/content-pot@2x.webp"
+                        ]
+                    }
+                ],
+                title: 'Кашпо для цветов керамическое СИМПЛГРЕЙ',
+                price: '450 ₽',
+                oldPrice: null,
+                label: null
+            }
+        ]
+
+block main
+    main.page
+        h1.page__title.visually-hidden Товары
+        ul.page__tab-buttons.tab-buttons
+            li.tab-buttons__item
+                a.tab-buttons__link.tab-buttons__link--current(href="#tab-1") Популярные товары
+            li.tab-buttons__item
+                a.tab-buttons__link(href="#tab-2") Недавно купили
+            li.tab-buttons__item
+                a.tab-buttons__link(href="#tab-3") Вас может заинтересовать
+
+        mixin card(images, title, price, oldPrice, label)
+            div.cards__item.card.swiper-slide
+                if label
+                    span.card__status(data-product-status=label)
+                        svg(width="50", height="50")
+                            use(xlink:href="#status-star")
+                div.card__gallery.swiper.swiper-card
+                    ul.card__image-list.image-list.swiper-wrapper
+                        if images
+                            each item in images[0]
+                                li.image-list__item.swiper-slide
+                                    picture
+                                        img(src=require(item[0]), alt=title, srcset=require(item[1]) + " 2x")
+                        else
+                            li.image-list__item.swiper-slide
+                                span.image-list__item-plug нет фото
+                            li.image-list__item.swiper-slide
+                                span.image-list__item-plug нет фото
+                            li.image-list__item.swiper-slide
+                                span.image-list__item-plug нет фото
+                            li.image-list__item.swiper-slide
+                                span.image-list__item-plug нет фото
+                            li.image-list__item.swiper-slide
+                                span.image-list__item-plug нет фото
+                    div.swiper-pagination
+                div.card__info
+                    h2.card__title=title
+                    if oldPrice
+                        span.card__price(data-old-price=oldPrice)=price
+                    else
+                        span.card__price= price
+                    div.card__counter.counter
+                        button.counter__button.counter__button--minus(type="button")
+                            span.visually-hidden decrement
+                        input(value="1", placeholder="1", type="number")
+                        button.counter__button.counter__button--plus(type="button")
+                            span.visually-hidden increment
+                    a.card__button.button(href="#")
+                        svg(width="20", height="20")
+                            use(xlink:href="#trolley")
+                        span В корзину
+                ul.card__actions.action-buttons
+                    li.action-buttons__item
+                        a.action-buttons__link(href="#")
+                            svg(width="20", height="20")
+                                use(xlink:href="#heart")
+                            span.visually-hidden В избранное
+                    li.action-buttons__item
+                        a.action-buttons__link(href="#")
+                            svg(width="20", height="20")
+                                use(xlink:href="#scale")
+                            span.visually-hidden В сравнение
+        div.page__tabs-wrapper
+            div.page__tabs.tabs.tabs--active.swiper.swiper-cards(id="tab-1")
+                div.swiper-button-prev.tabs__arrow-button.tabs__arrow-button--prev
+                div.tabs__item.cards.swiper-wrapper
+                    each item in products1
+                        +card(item.images, item.title, item.price, item.oldPrice, item.label)
+                div.swiper-button-next.tabs__arrow-button.tabs__arrow-button--next
+            div.page__tabs.tabs.swiper.swiper-cards(id="tab-2")
+                div.swiper-button-prev.tabs__arrow-button.tabs__arrow-button--prev
+                div.tabs__item.cards.swiper-wrapper
+                    each item in products2
+                        +card(item.images, item.title, item.price, item.oldPrice, item.label)
+                div.swiper-button-next.tabs__arrow-button.tabs__arrow-button--next
+            div.page__tabs.tabs.swiper.swiper-cards(id="tab-3")
+                div.swiper-button-prev.tabs__arrow-button.tabs__arrow-button--prev
+                div.tabs__item.cards.swiper-wrapper
+                    each item in products3
+                        +card(item.images, item.title, item.price, item.oldPrice, item.label)
+                div.swiper-button-next.tabs__arrow-button.tabs__arrow-button--next
+        div.page__card-sprite(style="display: none")
+            include /src/assets/img/icons/sprite.svg

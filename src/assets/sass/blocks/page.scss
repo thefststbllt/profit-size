@@ -1,0 +1,37 @@
+.page {
+  font-size: 16px;
+  font-family: $main-font;
+  width: 1396px;
+  margin: 70px auto 0;
+  padding: 0 86px;
+
+  @media (max-width: 1570px) {
+    width: 1042px;
+  }
+
+  @media (max-width: 1220px) {
+    width: 688px;
+  }
+
+  @media (max-width: 859px) {
+    width: 334px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: calc(100vw - 20px);
+    padding: 0;
+    margin: 40px 0 40px 20px;
+  }
+}
+
+.page__tab-buttons {
+  margin: 0 0 30px;
+
+  @media (max-width: $vp-mobile) {
+    margin: 0 0 25px;
+  }
+}
+
+.page__tabs-wrapper {
+  position: relative;
+}

@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+
+  @media (max-width: $vp-mobile) {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.cards__item {
+  @media (max-width: $vp-mobile) {
+    margin-right: 20px;
+  }
+}
